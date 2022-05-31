@@ -19,9 +19,9 @@ if (process.env.NODE_ENV === "production") {
 }
 
 app.use(express.static(__dirname + "/"));
-app.get("*", function (request, response) {
-  response.sendFile(path.resolve(__dirname, "client/build/index.html"));
-});
+// app.get("*", function (request, response) {
+//   response.sendFile(path.resolve(__dirname, "client/build/index.html"));
+// });
 
 app.listen(PORT, () => {
   console.log(`server listing to the port ${PORT}`);
