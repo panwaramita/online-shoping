@@ -1,0 +1,33 @@
+.homescreen {
+  max-width: 1300px;
+  margin: 1rem auto;
+}
+
+.homescreen_title {
+  font-size: 1.5rem;
+  color: #171717;
+  margin-bottom: 1rem;
+  margin-left: 8px;
+}
+
+.homescrenn_products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 252px) {
+  .homescrenn_products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 950px) {
+  .homescrenn_products {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 630px) {
+  .homescrenn_products {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
