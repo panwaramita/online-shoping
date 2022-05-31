@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "homepage": "https://panwaramita.github.io/online-shoping/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node backend/server.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "server": "nodemon backend/server.js",
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
@@ -21,5 +24,8 @@
     "express": "^4.18.1",
     "mongoose": "^6.3.4",
     "nodemon": "^2.0.16"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
